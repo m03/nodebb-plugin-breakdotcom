@@ -1,0 +1,13 @@
+{
+  "id": "nodebb-plugin-breakdotcom",
+  "name": "NodeBB breakdotcom Plugin",
+  "description": "NodeBB Plugin allowing users to embed Break.com videos inline in their posts.",
+  "url": "https://github.com/m03/nodebb-plugin-breakdotcom",
+  "library": "./library.js",
+  "hooks": [
+    { "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 6 }
+  ],
+  "css": [
+    "static/style.css"
+  ]
+}
